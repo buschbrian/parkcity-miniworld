@@ -1,0 +1,222 @@
+[
+ {
+  "name": "anchor",
+  "lat": 40.6438,
+  "lon": -111.4966,
+  "enu": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "Historic Main Street",
+  "lat": 40.6438,
+  "lon": -111.4966,
+  "enu": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "Town Lift Plaza",
+  "lat": 40.6468,
+  "lon": -111.4998,
+  "enu": [
+   -270.754,
+   333.257,
+   -0.014
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "Egyptian Theatre",
+  "lat": 40.6431,
+  "lon": -111.4958,
+  "enu": [
+   67.692,
+   -77.758,
+   -0.001
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "Park City Museum",
+  "lat": 40.6443,
+  "lon": -111.4969,
+  "enu": [
+   -25.384,
+   55.542,
+   -0.0
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "No Name Saloon",
+  "lat": 40.6437,
+  "lon": -111.4964,
+  "enu": [
+   16.923,
+   -11.108,
+   -0.0
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "High West Saloon",
+  "lat": 40.6459,
+  "lon": -111.4988,
+  "enu": [
+   -186.146,
+   233.279,
+   -0.007
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "Old Town Transit Center",
+  "lat": 40.6457,
+  "lon": -111.4966,
+  "enu": [
+   -0.0,
+   211.06,
+   -0.003
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "China Bridge Parking",
+  "lat": 40.6427,
+  "lon": -111.4946,
+  "enu": [
+   169.232,
+   -122.19,
+   -0.003
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "Quit'N Time Run (Town Finish)",
+  "lat": 40.6451,
+  "lon": -111.4988,
+  "enu": [
+   -186.148,
+   144.411,
+   -0.004
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "Park City Mountain Base (PayDay Lift)",
+  "lat": 40.6514,
+  "lon": -111.508,
+  "enu": [
+   -964.496,
+   844.301,
+   -0.129
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "Deer Valley Snow Park Lodge",
+  "lat": 40.6374,
+  "lon": -111.4783,
+  "enu": [
+   1548.593,
+   -710.776,
+   -0.227
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "detail corner NW",
+  "lat": 40.654,
+  "lon": -111.508,
+  "enu": [
+   -964.458,
+   1133.12,
+   -0.174
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "detail corner NE",
+  "lat": 40.654,
+  "lon": -111.486,
+  "enu": [
+   896.777,
+   1133.111,
+   -0.164
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "detail corner SW",
+  "lat": 40.635,
+  "lon": -111.508,
+  "enu": [
+   -964.732,
+   -977.475,
+   -0.148
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "detail corner SE",
+  "lat": 40.635,
+  "lon": -111.486,
+  "enu": [
+   897.032,
+   -977.484,
+   -0.138
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "overview corner NW",
+  "lat": 40.665,
+  "lon": -111.525,
+  "enu": [
+   -2402.291,
+   2355.372,
+   -0.887
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "overview corner NE",
+  "lat": 40.665,
+  "lon": -111.475,
+  "enu": [
+   1827.095,
+   2355.208,
+   -0.697
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "overview corner SW",
+  "lat": 40.625,
+  "lon": -111.525,
+  "enu": [
+   -2403.726,
+   -2087.987,
+   -0.795
+  ],
+  "width_m": 300.0
+ },
+ {
+  "name": "overview corner SE",
+  "lat": 40.625,
+  "lon": -111.475,
+  "enu": [
+   1828.186,
+   -2088.15,
+   -0.604
+  ],
+  "width_m": 300.0
+ }
+]

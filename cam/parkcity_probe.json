@@ -1,0 +1,289 @@
+{
+ "h0": 2131.0,
+ "h0_method": "anchor patch 5th percentile",
+ "attributions": [
+  "Google"
+ ],
+ "points": [
+  {
+   "name": "anchor",
+   "loaded": true,
+   "hit_rel": 27.133253799074673,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 16.0,
+   "h_p50": 31.3,
+   "h_p95": 67.7,
+   "relief_m": 51.7,
+   "status": "yes"
+  },
+  {
+   "name": "Historic Main Street",
+   "loaded": true,
+   "hit_rel": 27.133253799074673,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 16.0,
+   "h_p50": 31.3,
+   "h_p95": 67.7,
+   "relief_m": 51.7,
+   "status": "yes"
+  },
+  {
+   "name": "Town Lift Plaza",
+   "loaded": true,
+   "hit_rel": 7.993803560562648,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": -2.9,
+   "h_p50": 13.6,
+   "h_p95": 55.8,
+   "relief_m": 58.7,
+   "status": "yes"
+  },
+  {
+   "name": "Egyptian Theatre",
+   "loaded": true,
+   "hit_rel": 33.47036398363554,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 20.3,
+   "h_p50": 35.0,
+   "h_p95": 64.8,
+   "relief_m": 44.5,
+   "status": "yes"
+  },
+  {
+   "name": "Park City Museum",
+   "loaded": true,
+   "hit_rel": 24.061215388170922,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 12.0,
+   "h_p50": 26.6,
+   "h_p95": 63.1,
+   "relief_m": 51.1,
+   "status": "yes"
+  },
+  {
+   "name": "No Name Saloon",
+   "loaded": true,
+   "hit_rel": 28.44727856051341,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 16.5,
+   "h_p50": 31.4,
+   "h_p95": 65.1,
+   "relief_m": 48.6,
+   "status": "yes"
+  },
+  {
+   "name": "High West Saloon",
+   "loaded": true,
+   "hit_rel": 21.646368771760798,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 0.2,
+   "h_p50": 18.7,
+   "h_p95": 76.0,
+   "relief_m": 75.8,
+   "status": "yes"
+  },
+  {
+   "name": "Old Town Transit Center",
+   "loaded": true,
+   "hit_rel": 14.372126477806237,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 3.2,
+   "h_p50": 15.8,
+   "h_p95": 34.7,
+   "relief_m": 31.5,
+   "status": "yes"
+  },
+  {
+   "name": "China Bridge Parking",
+   "loaded": true,
+   "hit_rel": 27.191470342648195,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 24.2,
+   "h_p50": 40.2,
+   "h_p95": 65.7,
+   "relief_m": 41.5,
+   "status": "yes"
+  },
+  {
+   "name": "Quit'N Time Run (Town Finish)",
+   "loaded": true,
+   "hit_rel": 34.6791056780076,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 6.4,
+   "h_p50": 37.6,
+   "h_p95": 110.4,
+   "relief_m": 104.0,
+   "status": "yes"
+  },
+  {
+   "name": "Park City Mountain Base (PayDay Lift)",
+   "loaded": true,
+   "hit_rel": 4.681884039793019,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": -17.0,
+   "h_p50": -2.5,
+   "h_p95": 22.3,
+   "relief_m": 39.3,
+   "status": "yes"
+  },
+  {
+   "name": "Deer Valley Snow Park Lodge",
+   "loaded": true,
+   "hit_rel": 79.58293498036142,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 60.0,
+   "h_p50": 74.4,
+   "h_p95": 117.7,
+   "relief_m": 57.7,
+   "status": "yes"
+  },
+  {
+   "name": "detail corner NW",
+   "loaded": true,
+   "hit_rel": -27.923145072270025,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": -37.0,
+   "h_p50": -27.1,
+   "h_p95": -13.7,
+   "relief_m": 23.3,
+   "status": "yes"
+  },
+  {
+   "name": "detail corner NE",
+   "loaded": true,
+   "hit_rel": 180.75795491594505,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 118.3,
+   "h_p50": 163.3,
+   "h_p95": 200.4,
+   "relief_m": 82.1,
+   "status": "yes"
+  },
+  {
+   "name": "detail corner SW",
+   "loaded": true,
+   "hit_rel": 381.70886770107717,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 328.1,
+   "h_p50": 371.7,
+   "h_p95": 386.0,
+   "relief_m": 57.9,
+   "status": "yes"
+  },
+  {
+   "name": "detail corner SE",
+   "loaded": true,
+   "hit_rel": 191.26789246738423,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 174.0,
+   "h_p50": 197.3,
+   "h_p95": 216.1,
+   "relief_m": 42.1,
+   "status": "yes"
+  },
+  {
+   "name": "overview corner NW",
+   "loaded": true,
+   "hit_rel": 20.207905258748067,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": -29.4,
+   "h_p50": 17.3,
+   "h_p95": 79.5,
+   "relief_m": 108.9,
+   "status": "yes"
+  },
+  {
+   "name": "overview corner NE",
+   "loaded": true,
+   "hit_rel": 55.45142697364105,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 38.6,
+   "h_p50": 52.2,
+   "h_p95": 72.2,
+   "relief_m": 33.6,
+   "status": "yes"
+  },
+  {
+   "name": "overview corner SW",
+   "loaded": true,
+   "hit_rel": 579.7172259237312,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 522.6,
+   "h_p50": 573.8,
+   "h_p95": 620.0,
+   "relief_m": 97.4,
+   "status": "yes"
+  },
+  {
+   "name": "overview corner SE",
+   "loaded": true,
+   "hit_rel": 300.7551332531722,
+   "attributions": [
+    "Google"
+   ],
+   "coverage": 1.0,
+   "h_p5": 245.9,
+   "h_p50": 296.1,
+   "h_p95": 357.5,
+   "relief_m": 111.6,
+   "status": "yes"
+  }
+ ]
+}

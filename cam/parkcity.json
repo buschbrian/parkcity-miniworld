@@ -1,0 +1,24 @@
+{
+  "city": "parkcity",
+  "anchor": { "name": "Historic Main Street", "lat": 40.6438, "lon": -111.4966 },
+  "ground_h_guess": 2115.0,
+  "heading_deg": 45.0,
+  "elevation_deg": 30.0,
+  "frame_px": 1024,
+  "step_px": 768,
+  "render_px": 2048,
+  "terrain_margin_m": 300,
+  "levels": {
+    "detail": {
+      "ppm": 3.4,
+      "aoi": { "west": -111.508, "south": 40.635, "east": -111.486, "north": 40.654 },
+      "zoom": 8
+    },
+    "overview": {
+      "ppm": 1.7,
+      "aoi": { "west": -111.525, "south": 40.625, "east": -111.475, "north": 40.665 },
+      "zoom": 7
+    }
+  },
+  "geoid_offset_m": -15.9
+}

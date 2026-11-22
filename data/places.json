@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Historic Main Street",
+    "category": "landmark",
+    "lat": 40.6438,
+    "lon": -111.4966,
+    "level": "detail",
+    "blurb": "Heart of Old Town: mining-era storefronts, galleries, restaurants, and winter string lights."
+  },
+  {
+    "name": "Town Lift Plaza",
+    "category": "lift",
+    "lat": 40.6468,
+    "lon": -111.4998,
+    "level": "detail",
+    "blurb": "Ski-in / ski-out chairlift rising straight from Old Town up to Park City Mountain."
+  },
+  {
+    "name": "Egyptian Theatre",
+    "category": "landmark",
+    "lat": 40.6431,
+    "lon": -111.4958,
+    "level": "detail",
+    "blurb": "1926 Art Deco landmark on Main Street and longtime Sundance venue."
+  },
+  {
+    "name": "Park City Museum",
+    "category": "landmark",
+    "lat": 40.6443,
+    "lon": -111.4969,
+    "level": "detail",
+    "blurb": "Silver-mining history and the original basement territorial jail right on Main Street."
+  },
+  {
+    "name": "No Name Saloon",
+    "category": "dining",
+    "lat": 40.6437,
+    "lon": -111.4964,
+    "level": "detail",
+    "blurb": "Classic Park City apres-ski watering hole with a heated rooftop patio."
+  },
+  {
+    "name": "High West Saloon",
+    "category": "dining",
+    "lat": 40.6459,
+    "lon": -111.4988,
+    "level": "detail",
+    "blurb": "Ski-in gastro-distillery right at the bottom of Quit'N Time ski run."
+  },
+  {
+    "name": "Old Town Transit Center",
+    "category": "transit",
+    "lat": 40.6457,
+    "lon": -111.4966,
+    "level": "detail",
+    "blurb": "Hub for Park City's free electric buses and the Main Street Trolley."
+  },
+  {
+    "name": "China Bridge Parking",
+    "category": "transit",
+    "lat": 40.6427,
+    "lon": -111.4946,
+    "level": "detail",
+    "blurb": "Multi-level public garage with elevator access straight up to Main Street."
+  },
+  {
+    "name": "Quit'N Time Run (Town Finish)",
+    "category": "ski",
+    "lat": 40.6451,
+    "lon": -111.4988,
+    "level": "detail",
+    "blurb": "Groomed blue run winding right through Old Town to High West and Town Lift."
+  },
+  {
+    "name": "Park City Mountain Base (PayDay Lift)",
+    "category": "lift",
+    "lat": 40.6514,
+    "lon": -111.5080,
+    "level": "detail",
+    "blurb": "Main base village with PayDay Express, First Time, and Eagle lifts."
+  },
+  {
+    "name": "Deer Valley Snow Park Lodge",
+    "category": "lift",
+    "lat": 40.6374,
+    "lon": -111.4783,
+    "level": "overview",
+    "blurb": "Base area for Deer Valley Resort, a quick free-bus ride south of Main Street."
+  }
+]
