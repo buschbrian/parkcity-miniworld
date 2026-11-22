@@ -32,9 +32,8 @@ paintings). The viewer hides each painted layer's empty background so the render
   and zero shift, so the commit step is stable.
 - Seams: painted neighbours differ by 12.5–13.3 / 255 (mean absolute) across their 256 px overlap.
   The raw renders differ by 0.3. `stitch.py` evens out brightness and blends the overlap, but
-  content that differs between two paintings shows as a soft ghost in the band. Painting in
-  wavefront order with the neighbour context keeps this down: never paint a square before its top
-  and left neighbours.
+  content that differs between two paintings shows as a soft ghost in the band. The neighbour
+  context keeps this down only for top and left neighbours; AGENTS.md has the order that respects it.
 
 ## Known issues
 
@@ -51,14 +50,13 @@ paintings). The viewer hides each painted layer's empty background so the render
 
 ## Painting a square (Antigravity)
 
-1. Pick the next square in wavefront order (top and left neighbours painted first). Wave 2 is
-   `r-1_c1`, `r0_c0`, `r1_c-1`, which finishes the 3×3 core around the anchor.
+1. Pick the next square by the order rule in AGENTS.md (every painted neighbour above or to the
+   left). Wave 2 is `r-1_c1`, `r0_c0`, `r1_c-1`; it fits the rule and finishes the 3×3 core.
 2. `.venv/bin/python pipeline/winter_paint_prep.py prep <name> --out /tmp/pc_<name>_ctx.png`
    writes the render with the painted neighbours' overlap feathered in, and says which edges have art.
 3. Generate with the context image as Image 1 and `style/ref.png` as Image 2, using the prompt below.
 4. `.venv/bin/python pipeline/winter_paint_prep.py commit <name> <generated.jpg>` registers the image
-   onto the render. Repaint if the scale lands at the edge of the 0.94–1.06 search, or if
-   `overlap_mad` comes out well above the 12.5–13.3 measured so far.
+   onto the render. Keep it only if it meets the done criteria in AGENTS.md; otherwise regenerate.
 5. `stitch.py --level detail --source painted`, then `deploy/build_site.py`, `deploy/sync_tiles.py`
    and `wrangler pages deploy` (see README).
 
@@ -78,5 +76,4 @@ The prompt used for the first squares. Name the edges that already hold art:
 > image with exactly the framing of Image 1.
 
 Image 2 is a style reference only: copy its palette, outlines, snow shading and conifers, never its
-buildings or layout. `style/ref.png` is the winter bootstrap of `r0_c0`; that square itself is not
-yet committed to `painted/`.
+buildings or layout. `style/ref.png` is the winter bootstrap of `r0_c0`.
