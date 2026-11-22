@@ -36,7 +36,7 @@ node render3d/server.mjs --mode render --level detail [--only r0_c0,r0_c1] [--li
 .venv/bin/python pipeline/winter_paint_prep.py prep r-1_c1 --out /tmp/pc_r-1_c1_ctx.png
 .venv/bin/python pipeline/winter_paint_prep.py commit r-1_c1 /path/to/painted.jpg
 
-# 3. Refresh OSM ski runs & chairlifts (the current data/osm_ski.json is hand-drawn; see STATUS.md)
+# 3. Refresh OSM ski runs & chairlifts (overview area; retries three Overpass endpoints)
 .venv/bin/python pipeline/osm_ski.py
 
 # 4. Stitch Leaflet pyramids (both winter painted and summer 3D comparison layer)

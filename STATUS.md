@@ -38,12 +38,11 @@ paintings). The viewer hides each painted layer's empty background so the render
 
 ## Known issues
 
-1. **Ski runs and lifts are hand-drawn, not OpenStreetMap.** All three Overpass endpoints failed
-   when `osm_ski.py` first ran, and `data/osm_ski.json` was written by hand: 3 runs and 2 lifts of
-   3–6 points each. They are off. The hand PayDay line ends about 1 km from OSM's top terminal,
-   and Town Lift about 500 m short. The viewer still credits them to OpenStreetMap. On 2026-11-22
-   overpass-api.de answered for the overview area with 16 lifts and 147 downhill runs, so
-   re-running `pipeline/osm_ski.py` replaces them. Check the viewer for clutter afterwards.
+1. **Ski runs and lifts came from OpenStreetMap on 2026-11-22: 14 chairlifts and 147 downhill
+   runs** for the overview area. The first run's data was hand-drawn after all three Overpass
+   endpoints failed, and it was off by up to about 1 km; it has been replaced. The lines cover the
+   overview area, so outside the 73 rendered squares they cross blank map until the overview is
+   rendered. 35 runs have no name in OSM and show as "Unnamed run".
 2. **The winter prompt lived only in the Antigravity session.** It is recorded below. `paint.py`
    still carries the Salt Lake summer prompt, and is not what painted these squares.
 3. **`paint.py` and `painters.py` are an older copy of Salt Lake's.** They lack Salt Lake's

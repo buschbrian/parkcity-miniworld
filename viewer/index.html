@@ -142,7 +142,7 @@ const CAT = {
   landmark: { label: 'Main St',   color: '#a78bfa' },
   transit:  { label: 'Transit',   color: '#22c55e' },
 };
-const DIFF_COLOR = { novice: '#22c55e', intermediate: '#38bdf8', advanced: '#e2e8f0', expert: '#f8fafc' };
+const DIFF_COLOR = { novice: '#22c55e', easy: '#22c55e', intermediate: '#38bdf8', advanced: '#e2e8f0', expert: '#f8fafc' };
 
 // Gentle snowfall overlay
 (() => {
@@ -241,7 +241,7 @@ const DIFF_COLOR = { novice: '#22c55e', intermediate: '#38bdf8', advanced: '#e2e
       L.polyline(pts, {
         color: DIFF_COLOR[run.difficulty] || '#38bdf8',
         weight: 4, opacity: 0.8, dashArray: '8 6', lineCap: 'round'
-      }).bindTooltip(`${run.name} (${run.difficulty})`, { sticky: true }).addTo(skiGroup);
+      }).bindTooltip(`${run.name || 'Unnamed run'} (${run.difficulty})`, { sticky: true }).addTo(skiGroup);
     }
     const cabinIcon = L.divIcon({ className: '', html: '<div class="cabin"></div>', iconSize: [8, 8], iconAnchor: [4, 4] });
     for (const lift of cfg.ski.lifts || []) {
