@@ -33,7 +33,7 @@ paintings). The viewer hides each painted layer's empty background so the render
 - Seams: painted neighbours differ by 12.5–13.3 / 255 (mean absolute) across their 256 px overlap.
   The raw renders differ by 0.3. `stitch.py` evens out brightness and blends the overlap, but
   content that differs between two paintings shows as a soft ghost in the band. The neighbour
-  context keeps this down only for top and left neighbours; AGENTS.md has the order that respects it.
+  context in `winter_paint_prep.py prep` keeps this down; it covers all eight neighbours.
 
 ## Known issues
 
@@ -50,13 +50,13 @@ paintings). The viewer hides each painted layer's empty background so the render
 
 ## Painting a square (Antigravity)
 
-1. Pick the next square by the order rule in AGENTS.md (every painted neighbour above or to the
-   left). Wave 2 is `r-1_c1`, `r0_c0`, `r1_c-1`; it fits the rule and finishes the 3×3 core.
+1. Pick a square next to painted art. Wave 2 is `r-1_c1`, `r0_c0`, `r1_c-1`, which finishes the
+   3×3 core around the anchor.
 2. `.venv/bin/python pipeline/winter_paint_prep.py prep <name> --out /tmp/pc_<name>_ctx.png`
    writes the render with the painted neighbours' overlap feathered in, and says which edges have art.
 3. Generate with the context image as Image 1 and `style/ref.png` as Image 2, using the prompt below.
 4. `.venv/bin/python pipeline/winter_paint_prep.py commit <name> <generated.jpg>` registers the image
-   onto the render. Keep it only if it meets the done criteria in AGENTS.md; otherwise regenerate.
+   onto the render and saves it only if it passes the checks in AGENTS.md; on a refusal, regenerate.
 5. `stitch.py --level detail --source painted`, then `deploy/build_site.py`, `deploy/sync_tiles.py`
    and `wrangler pages deploy` (see README).
 

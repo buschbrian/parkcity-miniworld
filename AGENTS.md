@@ -25,23 +25,18 @@ Read it before painting.
 
 ## Painting a square
 
-Painted squares meet their neighbours in a 256 px overlap. `winter_paint_prep.py prep` blends in
-only the **top and left** painted neighbours, so a square painted after its right or bottom
-neighbour gets a seam on that side. Until the helper takes all four sides, grow the map
-**down and right** from the painted core: paint a square only when every painted neighbour is above
-or to the left of it. (`style/ref.png` is not a usable `r0_c0`: it sits 47 px off the render.
-Paint `r0_c0` like any other square.)
+Painted squares meet their neighbours in a 256 px overlap. `winter_paint_prep.py prep` blends every
+painted neighbour (edges and corners) into the context image and lists them; name those edges in
+the prompt. Grow the map outward from painted art so each new square has context on at least one
+side. (`style/ref.png` is not a usable `r0_c0`: it sits 47 px off the render. Paint `r0_c0` like
+any other square.)
 
-A square is done when `winter_paint_prep.py commit` reports all of:
-
-- `dx` and `dy` within ±48 px, and `peak` at least 6 (the limits `paint.py` enforces; `commit`
-  prints them but does not refuse);
-- `scale` strictly inside 0.94–1.06, not on either end of the search;
-- each `overlap_mad` at or below about 15 (the first squares measured 12.5–13.3).
-
-`commit` has already written `painted/detail/<name>.png` by then, so a square that misses any of
-these is deleted from there and regenerated; stitch reads everything in that folder. Then stitch (`pipeline/stitch.py --level detail --source
-painted`), look at the seams in the local viewer, and deploy.
+`winter_paint_prep.py commit` is the done check. It saves to `painted/detail/` only when the shift
+is within ±48 px, the registration peak is at least 6, the scale is inside its 0.94–1.06 search,
+and every edge overlap differs from the neighbour by 15 / 255 or less; otherwise it prints the
+problems, exits 1, and the square is regenerated. `--force` overrides the check and is Brian's call.
+Then stitch (`pipeline/stitch.py --level detail --source painted`), look at the seams in the local
+viewer, and deploy.
 
 ## Checks
 
