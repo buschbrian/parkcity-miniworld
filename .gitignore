@@ -12,3 +12,13 @@ stitched/
 tiles/
 style/
 viewer/config.json
+deploy/site/
+deploy/.synced.json
+deploy/.wrangler/
+submissions/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
