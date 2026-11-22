@@ -200,9 +200,9 @@ const DIFF_COLOR = { novice: '#22c55e', intermediate: '#38bdf8', advanced: '#e2e
     tileSize: 256, noWrap: true, keepBuffer: 4, attribution: cfg.attribution, ...opts
   });
 
-  if (overKey) makeTile(layers[overKey], { minZoom: 4, maxZoom: DZ + 1 }).addTo(map);
-  const paintedLayer = detailKey ? makeTile(layers[detailKey], { minZoom: 4, maxZoom: DZ + 1 }).addTo(map) : null;
-  const rawLayer = renderKey && renderKey !== detailKey ? makeTile(layers[renderKey], { minZoom: 4, maxZoom: DZ + 1 }) : null;
+  if (overKey) makeTile(layers[overKey], { minZoom: 4, maxZoom: DZ + 1, zIndex: 1 }).addTo(map);
+  const rawLayer = renderKey && renderKey !== detailKey ? makeTile(layers[renderKey], { minZoom: 4, maxZoom: DZ + 1, zIndex: 2 }).addTo(map) : null;
+  const paintedLayer = detailKey ? makeTile(layers[detailKey], { minZoom: 4, maxZoom: DZ + 1, zIndex: 3 }).addTo(map) : null;
 
   const main = layers[detailKey || overKey];
   map.fitBounds(boundsOf(main), { padding: [24, 24] });
@@ -325,8 +325,8 @@ const DIFF_COLOR = { novice: '#22c55e', intermediate: '#38bdf8', advanced: '#e2e
   } else {
     btnSrc.addEventListener('click', () => {
       btnSrc.classList.toggle('on');
-      if (btnSrc.classList.contains('on')) { rawLayer.addTo(map); paintedLayer.remove(); }
-      else { paintedLayer.addTo(map); rawLayer.remove(); }
+      if (btnSrc.classList.contains('on')) { paintedLayer.remove(); }
+      else { paintedLayer.addTo(map); }
     });
   }
 })();
