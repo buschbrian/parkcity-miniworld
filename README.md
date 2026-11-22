@@ -2,6 +2,8 @@
 
 A winter-painted, isometric-style tile map of Park City, Utah, built on the Mini World pipeline (Google Photorealistic 3D Tiles rendered with a fixed 30° orthographic camera, transformed from summer 3D meshes into a cozy winter ski town with Antigravity image generation, and stitched into an interactive Leaflet visitor map).
 
+Live: <https://parkcity-miniworld.pages.dev>
+
 ## Camera and grid (frozen)
 
 | | |
@@ -39,6 +41,18 @@ node render3d/server.mjs --mode render --level detail [--only r0_c0,r0_c1] [--li
 # 4. Stitch Leaflet pyramids (both winter painted and summer 3D comparison layer)
 .venv/bin/python pipeline/stitch.py --level detail --source renders
 .venv/bin/python pipeline/stitch.py --level detail --source painted
+```
+
+## Deploy
+
+Cloudflare Pages + R2, the same layout as `slc-miniworld`: the `parkcity-miniworld` Pages project serves the
+viewer, and the Pages Function in `deploy/functions/tiles/` serves `/tiles/<layer>/<z>/<x>/<y>.jpg` from the
+private `parkcity-miniworld-tiles` bucket. Tiles never go into git.
+
+```bash
+.venv/bin/python deploy/build_site.py          # viewer -> deploy/site/, tile paths -> /tiles/
+.venv/bin/python deploy/sync_tiles.py          # upload new or changed tiles (MD5-tracked)
+cd deploy && wrangler pages deploy --project-name parkcity-miniworld --branch main
 ```
 
 ## Terms and attribution
