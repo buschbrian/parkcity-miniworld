@@ -4,9 +4,7 @@
   "description": "Winter painted isometric mini-world map of Park City, Utah",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "wrangler deploy",
-    "preview": "wrangler dev"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "type": "commonjs",
@@ -14,8 +12,5 @@
     "3d-tiles-renderer": "^0.5.4",
     "leaflet": "^1.9.4",
     "three": "^0.187.0"
-  },
-  "devDependencies": {
-    "wrangler": "^4.166.0"
   }
 }
